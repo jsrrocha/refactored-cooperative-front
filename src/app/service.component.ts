@@ -7,11 +7,9 @@ import {HttpClient, HttpParams, HttpHeaders} from '@angular/common/http';
 
 export class ServiceComponent {
 
-  //backendUrl = "https://cooperative-sd.herokuapp.com/cooperative/";
-  backendUrl = "http://localhost:8086/cooperative/";   
+  backendUrl = "https://new-cooperative.herokuapp.com/cooperative/"; 
 
-
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {} 
 
   addAgenda(data: object){
       const url = this.backendUrl + "agenda/add";
